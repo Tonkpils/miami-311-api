@@ -1,0 +1,2 @@
+class CaseOwner < ApplicationRecord
+end

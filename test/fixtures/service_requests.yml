@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ticket_id: MyString
+  issue_type: one
+  case_owner: one
+  location: one
+  closed_at: 2017-11-13 23:31:08
+  status: 1
+  method_received: 1
+  goal_days: 1
+  actual_completed_days: 1
+
+two:
+  ticket_id: MyString
+  issue_type: two
+  case_owner: two
+  location: two
+  closed_at: 2017-11-13 23:31:08
+  status: 1
+  method_received: 1
+  goal_days: 1
+  actual_completed_days: 1
