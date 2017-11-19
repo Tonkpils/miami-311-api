@@ -45,8 +45,8 @@ ActiveRecord::Schema.define(version: 20171114043108) do
     t.bigint "case_owner_id"
     t.bigint "location_id"
     t.datetime "closed_at"
-    t.integer "status"
-    t.integer "method_received"
+    t.string "status"
+    t.string "method_received"
     t.integer "goal_days"
     t.integer "actual_completed_days"
     t.datetime "created_at", null: false

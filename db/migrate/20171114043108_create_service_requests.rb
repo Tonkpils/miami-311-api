@@ -6,8 +6,8 @@ class CreateServiceRequests < ActiveRecord::Migration[5.1]
       t.references :case_owner, foreign_key: true
       t.references :location, foreign_key: true
       t.timestamp :closed_at
-      t.integer :status
-      t.integer :method_received
+      t.string :status
+      t.string :method_received
       t.integer :goal_days
       t.integer :actual_completed_days
 
