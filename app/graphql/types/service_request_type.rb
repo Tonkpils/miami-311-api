@@ -5,6 +5,7 @@ Types::ServiceRequestType = GraphQL::ObjectType.define do
   global_id_field :id
 
   field :id, !types.Int, "DB ID"
+  field :issueType, -> { Types::IssueType }, property: :issue_type
   field :ticketId, !types.String, "The given Miami 311 ticket ID", property: :ticket_id
   field :closedAt, types.String, "The date/time the ticket was closed", property: :closed_at
   field :status, !types.String, "The status of the ticket"

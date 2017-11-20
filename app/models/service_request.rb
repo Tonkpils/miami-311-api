@@ -3,6 +3,14 @@ class ServiceRequest < ApplicationRecord
   belongs_to :case_owner
   belongs_to :location
 
+  def close_with(status:)
+    update_attributes!(
+      status: status,
+      closed_at: Time.current,
+      actual_completed_days: (Time.current - created_at).to_i
+    )
+  end
+
   def completed?
     status == "CLOSED"
   end
